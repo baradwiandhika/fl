@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+*{
+    font-family: 'Poppins',cursive;
+}
+body{
+    color: azure;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.greetings{
+    font-size: 6rem;
+    font-weight: 900;
+    text-align: center;
+    
+}
+.greetings > span{
+    animation: glow 2.5s ease-in-out infinite;
+    animation-duration: 3s;
+    
+    
+}
+
+
+@keyframes glow{
+    0%, 100%{
+        color: #ffffff;
+        text-shadow: 0 0 12px #c0c2c2, 0 0 50px #d3559a, 0 0 100px #a739d6;
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+.greetings > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.greetings > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.greetings > span:nth-child(4){
+    animation-delay: .6s;
+}
+.greetings > span:nth-child(5){
+    animation-delay: .8s;
+}
+
+
+.greetings > span:nth-child(6){
+    animation-delay: .2s ;
+}
+
+.greetings > span:nth-child(7){
+    animation-delay: .3s ;
+}
+
+.greetings > span:nth-child(8){
+    animation-delay: .5s ;
+}
+
+.greetings > span:nth-child(9){
+    animation-delay: .7s ;
+}
+
+.greetings > span:nth-child(10){
+    animation-delay: .8s ;
+}
+
+.greetings > span:nth-child(11){
+    animation-delay: .9s ;
+}
+
+.greetings > span:nth-child(12){
+    animation-delay: .4s ;
+}
+
+.greetings > span:nth-child(13){
+    animation-delay: .6s ;
+}
+
+.greetings > span:nth-child(14){
+    animation-delay: .8s ;
+}
+
+
+.description{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+    
+}
+
+.br{
+    position: relative;
+    right:670px;
+    bottom: 550px;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.br > p{
+    animation: glow 2.5s ease-in-out infinite;
+    animation-duration: 2s;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .greetings {
+        font-size: 4rem; /* Ukuran huruf dikurangi untuk layar yang lebih kecil */
+    }
+    
+    .br {
+        right: auto; /* Menghapus posisi yang diberikan secara absolut */
+        bottom: auto;
+        text-align: center; /* Pusatkan teks untuk layar yang lebih kecil */
+    }
+}
+ 
