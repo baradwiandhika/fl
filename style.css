@@ -102,8 +102,8 @@ body{
 
 .br{
     position: relative;
-    right:670px;
-    bottom: 550px;
+    
+    text-align: center;
     font-size: x-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -114,15 +114,15 @@ body{
     
 }
 
+
 @media screen and (max-width: 768px) {
     .greetings {
-        font-size: 4rem; /* Ukuran huruf dikurangi untuk layar yang lebih kecil */
-    }
-    
-    .br {
-        right: auto; /* Menghapus posisi yang diberikan secara absolut */
-        bottom: auto;
-        text-align: center; /* Pusatkan teks untuk layar yang lebih kecil */
+        font-size: 4rem;
     }
 }
- 
+
+@media screen and (max-width: 480px) {
+    .greetings {
+        font-size: 3rem;
+    }
+}
